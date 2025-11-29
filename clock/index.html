@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="clock">Time will show here</h1>
+
+<script>
+function time(){
+    let current = new Date()
+    let text = current.toLocaleTimeString()
+    document.getElementById("clock").innerHTML = text 
+
+
+    setTimeout(time,1000)
+}
+time()
+
+</script>
+
+</body>
+</html>
